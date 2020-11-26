@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayoutcustompopup"
+    android:background="#d21A1a1a">
+
+    <View
+        android:layout_height="40dp"
+        android:layout_width="240dp"
+        android:id="@+id/rr"
+        android:background="#d21A1a1a">
+
+    </View>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        android:padding="7dp"
+        android:id="@+id/imageViewDismiss"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_open"
+        android:padding="7dp"
+        android:id="@+id/imageViewMaximize"
+        android:layout_toEndOf="@+id/imageViewDismiss"
+        android:layout_toRightOf="@id/imageViewDismiss"/>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_below="@+id/rr"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:id="@+id/playerView"
+        app:use_controller="true">
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+</RelativeLayout>
